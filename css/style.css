@@ -1,0 +1,159 @@
+/* Resets */
+*, .col-xl-6, .container, .row {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+/* End of Resets */
+
+/* Sections */
+.section {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+}
+/* End of Sections */
+
+/* Hero Section */
+.hero-blue-background {
+    background: #142c8e url('images/background-swirls.png');
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.hero-heading {
+    font-size: 6.5rem;
+    font-weight: 400;
+    width: 822px;
+    line-height: 6.25rem;
+    padding-bottom: 30px;
+}
+
+.hero-par {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 2px;
+    padding: 48px 0 37px;
+    font-weight: 600;
+}
+
+.hero-par-link {
+    color: #56ccfe;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 2px;
+    padding-top: 30px;
+}
+
+.hero-par-link:hover {
+    color:rgba(255, 255, 255, 0.6);
+    text-decoration: underline;
+}
+
+.hero-arrow {
+    width: 40px;
+    height: 28px;
+    margin-left: 6px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: all .1s;
+}
+
+.hero-arrow-background:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: #56CCFE;
+    z-index: 1;
+    left: 725px;
+    width: 28px;
+    height: 28px;
+    opacity: .4;
+}
+
+.hero-arrow:after {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.wrapper {
+    display:flex;
+    width: 70%;
+    margin-top: 100px;
+}
+
+.qr-code {
+    height: 126px; 
+    width: 126px;
+}
+
+.col-md-3 {
+    margin-right: 32px;
+}
+
+.side-border {
+    border-left: 1px solid rgba(235,232,232,0.3);
+}
+
+.phone-style {
+    background: #fff url("images/phone.png") no-repeat;
+    background-position: 12px;
+    padding: 20px 12px 18px 35px;
+    border: 0.07rem solid #b7bcbf;
+    border-radius: 4px;
+    width: 300px;
+}
+
+.phone-padding {
+    padding-left: 32px;
+}
+
+.input-text {
+    font-size: 1rem;
+    color: #2e2e2f;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.send-button {
+    background-color: #f9b822;
+    margin: 12px 2px;
+    width: 138px;
+    height: 56px;
+}
+
+.hero-img {
+    width: 510px;
+    height: 440px;
+}
+/* End of Hero Section */
+
+/* Buttons */
+.paypal-button {
+    max-width: 320px;
+    display: block;
+    padding: 13px 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 25px;
+    border: none;
+}
+
+/* Typography */
+.small-bold-par {
+    font-weight: 600;
+    font-size: 0.875rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+}
+/* End of Typography */
