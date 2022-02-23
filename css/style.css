@@ -12,15 +12,41 @@ a {
 /* Sections */
 .section {
     display: flex;
-    width: 100%;
     height: 80vh;
     justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 70%;
+    margin-top: 100px;
+}
+
+.section-image-size {
+    height: 486px;
+    width: 512px;
+}
+
+.editorial-headline {
+    width: 524px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    color: #0C0C0D;
+    margin-top: 80px;
+}
+
+.editorial-paragraph {
+    width: 524px;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
 }
 /* End of Sections */
 
 /* Hero Section */
 .hero-blue-background {
-    background: #142c8e url('images/background-swirls.png');
+    background: #142c8e url('../images/background-swirls.png');
     background-size: 100%;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -82,12 +108,6 @@ a {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.wrapper {
-    display:flex;
-    width: 70%;
-    margin-top: 100px;
-}
-
 .qr-code {
     height: 126px; 
     width: 126px;
@@ -102,7 +122,7 @@ a {
 }
 
 .phone-style {
-    background: #fff url("images/phone.png") no-repeat;
+    background: #fff url("../images/phone.png") no-repeat;
     background-position: 12px;
     padding: 20px 12px 18px 35px;
     border: 0.07rem solid #b7bcbf;
