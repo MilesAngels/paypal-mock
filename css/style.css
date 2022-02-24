@@ -225,6 +225,24 @@ section {
 }
 /* End of Hero Section */
 
+/* Grid for Associated Brands */
+.grid {
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.heading-showcase {
+    padding-top: 40px;
+    font-size: 3rem;
+    line-height: 56px;
+}
+
+.item1 {
+    grid-row: 1 / 3;
+}
+/* End of Grid Associated Brands */
+
 /* Buttons */
 .paypal-button {
     max-width: 320px;
