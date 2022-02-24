@@ -11,6 +11,7 @@ a {
 body {
     display: block;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
 }
 /* End of Resets */
 
@@ -18,7 +19,26 @@ body {
 section {
     display: flex;
     justify-content: center;
-    
+}
+
+.row {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.text-xs-center {
+    text-align: center !important;
+}
+
+.text-md-left {
+    text-align: left !important;
 }
 
 .theme-background-color-white {
@@ -56,7 +76,8 @@ section {
     padding-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
+    line-height: 32px;
 }
 
 .disclosure {
@@ -131,13 +152,17 @@ section {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.qr-code {
-    height: 126px; 
+.col-md-3 img {
     width: 126px;
+    height: 126px;
 }
 
 .col-md-3 {
-    margin-right: 32px;
+    width: 30%;
+}
+
+.col-md-8 {
+    width: 60%;
 }
 
 .side-border {
@@ -174,6 +199,9 @@ section {
 
 .hero-img {
     width: 80%;
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
 }
 /* End of Hero Section */
 
