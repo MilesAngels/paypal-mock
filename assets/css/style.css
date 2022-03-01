@@ -15,6 +15,7 @@ body {
 }
 /* End of Resets */
 
+
 /* Sections */
 section {
     display: flex;
@@ -352,3 +353,18 @@ section {
     line-height: 20px;
 }
 /* End of Typography */
+
+/*
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    border: none !important;
+    background-color: transparent;
+    transition: box-shadow .15s ease-in-out;
+}
+*/
