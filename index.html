@@ -56,28 +56,30 @@
                 <!-- Heading in Hero Section -->
                 <h2 class="hero-heading">The New PayPal app is here</h2>
                 <div class="row">
-                    <!-- Column -->
+                    <!-- 1st Column -->
                     <div class="col-xl-6">
                         <!-- Paragraph Link: needs update-->
-                        <p><a class="hero-par-link hero-arrow-background">Learn more about the new <span>features<svg
+                        <p><a class="hero-par-link hero-arrow-background">Learn more about the new features<svg
                                         xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                         class="bi bi-arrow-right hero-arrow" viewBox="3 0 16 16">
                                         <path fill-rule="evenodd"
                                             d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                                     </svg></a></p>
+                        <!-- Paragraph that tells user that they can choose between scanning the code or adding their phone number to sign up for paypal -->
                         <p class="hero-par">Scan the code or enter your number to get the app.</p>
                         <div>
                             <div class="row">
-                                <!-- QR Code -->
+                                <!-- QR Code to sign up for paypal-->
                                 <div class="col-md-3 qr-phone bottom-margin">
                                     <img src="assets/images/qr-code-us-home-hero.svg" class="qr-code qr-phone" alt="qr code">
                                 </div>
-                                <!-- Phone Number Input -->
+                                <!-- Phone Number Input to sign up for paypal-->
                                 <div class="col-md-8 side-border bottom-margin">
                                     <div class="phone-padding">
+                                        <!-- Take input for phone number -->
                                         <input type="tel" id="phone-input" placeholder="Phone number"
                                             class="phone-style input-text">
-                                        <!-- Send Button -->
+                                        <!-- Send Button: This is just for looks -->
                                         <button class="input-text send-button paypal-button">Send Link</button>
                                         <p class="small-bold-par">By clicking Send Link you agree to receive a text
                                             message with a link to the PayPal app. Message and data rates may apply.</p>
@@ -86,22 +88,22 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Column -->
+                    <!-- 2nd Column -->
                     <div class="col-xl-6">
                         <!-- BIG Hero Image -->
-                        <img class="hero-img" src="assets/images/device-hero.png">
+                        <img class="hero-img" src="assets/images/device-hero.png" alt="Woman touching giant phone">
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Ribbon -->
+        <!-- Ribbon for asking user to connect their online store to a paypal business account -->
         <section class="notification-ribbon background-color-white">
             <div class="container">
                 <p class="notification-ribbon-headline">
-                    Need to connect PayPal withoyur online store?
+                    Need to connect PayPal with your online store?
                     <span class="notification-hatch">
-                        <a href="#">Sign up for a Business account</a>
-                        <span class="tertiary-button-icon"></span>
+                        <!-- Arrow and circle needs to be changed and add transitions so when on hover, ther arrow moves inside the circle -->
+                        <a href="#">&nbsp;Sign up for a Business account&nbsp; <img class="tertiary-button-icon" alt=""></a>
                     </span>
                 </p>
             </div>
@@ -111,16 +113,20 @@
         <section class="editorial theme-background-color-white">
             <div class="container">
                 <div class="row">
+                    <!-- Changes width with different breakpoints -->
                     <div class="col-md-6 text-xs-center col-xs-12">
                         <img class="editorial-img" src="assets/images/BNPL-img.jpg" alt="Pay in 4 image">
                     </div>
+                    <!-- Changes width with different breakpoints -->
+                    <!-- All text is going to be left aligned -->
                     <div class="col-md-6 col-xs-12 text-md-left">
                         <h2 class="ppyl-heading editorial-headline">Buy now, pay later with Pay in 4</h2>
                         <p class="editorial-paragraph">Want something now but the sale ends before payday? Choose Pay in
                             4 at checkout with millions of online stores and split the cost into 4 interest-free
                             payments.</p>
                         <span class="editorial-paragraph bnpl-link">
-                            <a href="#">Learn how to Pay in 4</a>
+                            <a href="#">Learn how to Pay in 4</a> 
+                            <span class="tertiary-button-icon"></span></span>
                         </span>
                     </div>
                 </div>
@@ -130,10 +136,13 @@
         <section class="editorial theme-background-color-white">
             <div class="container">
                 <div class="row">
+                    <!-- Changes width with different breakpoints -->
+                    <!-- All text is going to be left aligned -->
                     <div class="col-md-6 text-md-left col-xs-12">
                         <h2 class="ppyl-heading editorial-headline">Check out with crypto</h2>
                         <p class="editorial-paragraph">Access a new way to pay. Sign up for an account and spend crypto
                             at millions of online stores with PayPal.</p>
+                        <!-- Disclosure in smaller text -->
                         <span class="disclosure">
                             Checking out with crypto is a taxable transaction. Fees and exchange rates will apply.
                             Buying and selling cryptocurrency is subject to a number of risks and PayPal does not make
@@ -141,6 +150,7 @@
                         </span>
                         <br>
                         <br>
+                        <!-- Add arrow and circle -->
                         <span class="editorial-paragraph bnpl-link">
                             <a href="#">Sign up</a>
                         </span>
@@ -207,18 +217,20 @@
         </section>
         <!-- Brands Associtation -->
         <section>
-            <div class="grid">
-                <div class="item1">
-                    <h2 class="heading-showcase">
-                        Check out with millions of brands you love
-                    </h2>
+            <div class="container">
+                <div class="grid">
+                    <div class="item1">
+                        <h2 class="heading-showcase">
+                            Check out with millions of brands you love
+                        </h2>
+                    </div>
+                    <div class="item2"><img src="assets/images/hulu-logo.jpg" class="showcase-img"></div>
+                    <div class="item3"><img src="assets/images/grubhub-logo.jpg" class="showcase-img"></div>
+                    <div class="item4"><img src="assets/images/potterybarn-logo.jpg" class="showcase-img"></div>
+                    <div class="item5"><img src="assets/images/spotify-logo.jpg" class="showcase-img"></div>
+                    <div class="item6"><img src="assets/images/ultra-logo.jpg" class="showcase-img"></div>
+                    <div class="item7"><img src="assets/images/groupon-logo.jpg" class="showcase-img"></div>
                 </div>
-                <div class="item2"><img src="assets/images/hulu-logo.jpg" class="showcase-img"></div>
-                <div class="item3"><img src="assets/images/grubhub-logo.jpg" class="showcase-img"></div>
-                <div class="item4"><img src="assets/images/potterybarn-logo.jpg" class="showcase-img"></div>
-                <div class="item5"><img src="assets/images/spotify-logo.jpg" class="showcase-img"></div>
-                <div class="item6"><img src="assets/images/ultra-logo.jpg" class="showcase-img"></div>
-                <div class="item7"><img src="assets/images/groupon-logo.jpg" class="showcase-img"></div>
             </div>
         </section>
     </main>
