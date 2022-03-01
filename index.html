@@ -18,13 +18,20 @@
     <title>Paypal Mock</title>
 
     <style>
-        @media (min-width: 1152px) {
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {}
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {}
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {}
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
             .container {
                 max-width: 1192px;
             }
-        }
-
-        @media (min-width: 1024px) {
             .container {
                 max-width: 1151px;
                 padding-left: 48px;
@@ -39,8 +46,10 @@
                 width: 40%;
                 padding-bottom: 0;
             }
-
         }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {}
     </style>
 </head>
 
@@ -57,7 +66,7 @@
                 <h2 class="hero-heading">The New PayPal app is here</h2>
                 <div class="row">
                     <!-- 1st Column -->
-                    <div class="col-xl-6">
+                    <div class="col-xl-6 col-md-6 col-xs-12">
                         <!-- Paragraph Link: needs update-->
                         <p><a class="hero-par-link hero-arrow-background">Learn more about the new features<svg
                                     xmlns="http://www.w3.org/2000/svg" fill="currentColor"
@@ -90,7 +99,7 @@
                         </div>
                     </div>
                     <!-- 2nd Column -->
-                    <div class="col-xl-6">
+                    <div class="col-xl-6 col-md-6 col-xs-12">
                         <!-- BIG Hero Image -->
                         <img class="hero-img" src="assets/images/device-hero.png" alt="Woman touching giant phone">
                     </div>
