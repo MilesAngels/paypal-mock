@@ -112,7 +112,56 @@
         }
 
         /* Small devices (portrait tablets and large phones, 600px and up) */
-        @media only screen and (min-width: 600px) {}
+        @media only screen and (min-width: 600px) {
+            .section {
+                padding: 60px 36px 0 36px;
+            }
+
+            .hero-heading {
+                font-size: 3.25rem;
+                width: 500px;
+                line-height: 56px;
+                font-weight: 400;
+                padding-bottom: 0px;
+                margin: 0;
+            }
+
+            .send-button {
+                width: 320px;
+                height: 46px;
+                font-size: 15px;
+            }
+
+            .notification-ribbon-headline {
+                font-size: 1.25rem;
+                vertical-align: middle;
+            }
+            
+            .notification-hatch::before {
+                content: "\a";
+                white-space: pre;
+                line-height: 5rem;
+            }
+
+            .heading-showcase {
+                margin: 0 0 20px;
+            }
+
+            .grid {
+                grid-template-columns: repeat(2, minmax(250px, 1fr));
+                flex-wrap: wrap;
+                padding-bottom: 100px;
+            }
+            .showcase-img {
+                width: 100%;
+                margin: 10px;
+            }
+
+            .container {
+                margin: 0 36px;
+                padding: 0;
+            }
+        }
 
         /* Medium devices (landscape tablets, 768px and up) */
         @media only screen and (min-width: 768px) {}
