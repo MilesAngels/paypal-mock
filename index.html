@@ -135,6 +135,7 @@
             .notification-ribbon-headline {
                 font-size: 1.25rem;
                 vertical-align: middle;
+                font-weight: 600;
             }
             
             .notification-hatch::before {
@@ -152,6 +153,7 @@
                 flex-wrap: wrap;
                 padding-bottom: 100px;
             }
+
             .showcase-img {
                 width: 100%;
                 margin: 10px;
@@ -164,7 +166,65 @@
         }
 
         /* Medium devices (landscape tablets, 768px and up) */
-        @media only screen and (min-width: 768px) {}
+        @media only screen and (min-width: 768px) {
+            .section {
+                padding-top: 300px;
+            }
+
+            .hero-heading {
+                width: 670px;
+            }
+
+            .hero-img {
+                width: 80%;
+            }
+
+            .notification-ribbon-headline {
+                text-align: center;
+            }
+
+            .editorial-headline, .editorial-paragraph {
+                width: 330px;
+                margin-top: 0px;
+            }
+
+            .editorial-paragraph {
+                font-weight: 500;
+                font-size: 1.25rem;
+            }
+
+            .disclosure {
+                line-height: 2.5rem;
+            }
+
+            .grid {
+                grid-template-columns: repeat(3, minmax(240px, 1fr));
+                flex-wrap: wrap;
+                padding-bottom: 10px;
+            }
+
+            .heading-showcase {
+                font-size: 2.2rem;
+                line-height: 2.6rem;
+                margin: 0 60px;
+            }
+
+            .item1 {
+                grid-row: 1 / 4;
+                grid-column: 1/span 3;
+            }
+
+            .pullout-headline {
+                font-size: 44px;
+                text-align: center;
+            }
+
+            .number {
+                width: 55px;
+                height: 55px;
+                border-radius: 15px;
+            }
+        }
 
         /* Large devices (laptops/desktops, 992px and up) */
         @media only screen and (min-width: 992px) {
@@ -275,7 +335,7 @@
                 <h2 class="hero-heading">The New PayPal app is here</h2>
                 <div class="row">
                     <!-- 1st Column -->
-                    <div class="col-xl-6 col-md-6 col-xs-12">
+                    <div class="col-xl-6 col-lg-6 col-xs-12">
                         <!-- Paragraph Link: needs update-->
                         <p><a class="hero-par-link hero-arrow-background" id="new-features">Learn more about the new features<svg
                                     xmlns="http://www.w3.org/2000/svg" fill="currentColor"
@@ -308,7 +368,7 @@
                         </div>
                     </div>
                     <!-- 2nd Column -->
-                    <div class="col-xl-6 col-md-6 col-xs-1">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12">
                         <!-- BIG Hero Image -->
                         <img class="hero-img" src="assets/images/device-hero.png" alt="Woman touching giant phone">
                     </div>
