@@ -38,13 +38,17 @@
                 padding: 0 24px;
             }
 
-            .hero-par-link,.hero-par, .col-md-3, .small-bold-par {
+            .hero-par-link,
+            .hero-par,
+            .col-md-3,
+            .small-bold-par {
                 display: none;
             }
 
             .side-border {
                 border-left: none;
             }
+
             .phone-padding {
                 padding-left: 0;
             }
@@ -74,6 +78,7 @@
                 font-size: 16px;
                 width: 420px;
                 padding-right: 12px;
+                font-weight: bolder;
             }
 
             .heading-showcase {
@@ -137,7 +142,7 @@
                 vertical-align: middle;
                 font-weight: 600;
             }
-            
+
             .notification-hatch::before {
                 content: "\a";
                 white-space: pre;
@@ -167,8 +172,12 @@
 
         /* Medium devices (landscape tablets, 768px and up) */
         @media only screen and (min-width: 768px) {
-            .section {
-                padding-top: 300px;
+            section {
+                padding-top: 60px !important;
+            }
+
+            .editorial {
+                margin-top: 60px !important;
             }
 
             .hero-heading {
@@ -183,7 +192,8 @@
                 text-align: center;
             }
 
-            .editorial-headline, .editorial-paragraph {
+            .editorial-headline,
+            .editorial-paragraph {
                 width: 330px;
                 margin-top: 0px;
             }
@@ -216,7 +226,7 @@
 
             .pullout-headline {
                 font-size: 44px;
-                text-align: center;
+                text-align: center !important;
             }
 
             .number {
@@ -228,15 +238,6 @@
 
         /* Large devices (laptops/desktops, 992px and up) */
         @media only screen and (min-width: 992px) {
-            .container {
-                max-width: 1192px;
-            }
-            .container {
-                max-width: 1151px;
-                padding-left: 48px;
-                padding-right: 48px;
-            }
-
             .editorial {
                 min-height: 530px;
             }
@@ -247,21 +248,99 @@
             }
 
             .hero-heading {
-                font-size: 6.5rem;
+                font-size: 3.25rem;
                 font-weight: 400;
                 width: 822px;
-                line-height: 6.25rem;
+                line-height: 56px;
                 padding-bottom: 30px;
             }
 
             .hero-img {
-                width: 70% !important;
+                width: 60%;
+            }
+
+            .grid {
+                grid-template-columns: repeat(3, minmax(280px, 1fr));
+                flex-wrap: wrap;
+                padding-bottom: 10px;
             }
 
         }
 
         /* Extra large devices (large laptops and desktops, 1200px and up) */
-        @media only screen and (min-width: 1200px) {}
+        @media only screen and (min-width: 1200px) {
+            section {
+                padding: 80px 0 0 0;
+            }
+
+            .container {
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 24px;
+                padding-right: 24px;
+                width: 90%;
+            }
+
+            .hero-par-link,
+            .hero-par,
+            .col-md-3,
+            .small-bold-par, input {
+                display: block;
+            }
+
+            .side-border {
+                border-left: 1px solid rgba(235,232,232,0.3);
+            }
+
+            .hero-img {
+                width: 100%;
+            }
+
+            .send-button {
+                width: 138px;
+                height: 56px; 
+                padding: 0;
+            }
+
+            .notification-hatch:before {
+                content: none !important;
+                
+            }
+
+            .editorial-headline {
+                width: 468px;
+                font-size: 3rem;
+                line-height: 56px;
+            }
+
+            .grid {
+                display: grid;
+                width: 90%;
+                grid-template-columns: repeat(5, minmax(210px, 1fr));
+                flex-wrap: wrap;
+                padding-bottom: 100px;
+            }
+
+            .item1 {
+                grid-row: 1 / 3;
+                grid-column: 1/span 2;
+            }
+
+            .heading-showcase {
+                padding-top: 40px;
+                font-size: 3.3rem;
+                line-height: 56px;
+                margin: 0;
+            }
+
+            .number {
+                width: 60px;
+                height: 80px;
+                font-size: 3.5rem;
+                border-radius: 20px;
+            }
+
+        }
     </style>
 </head>
 
@@ -337,8 +416,8 @@
                     <!-- 1st Column -->
                     <div class="col-xl-6 col-lg-6 col-xs-12">
                         <!-- Paragraph Link: needs update-->
-                        <p><a class="hero-par-link hero-arrow-background" id="new-features">Learn more about the new features<svg
-                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        <p><a class="hero-par-link hero-arrow-background" id="new-features">Learn more about the new
+                                features<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                     class="bi bi-arrow-right hero-arrow" viewBox="3 0 16 16">
                                     <path fill-rule="evenodd"
                                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
@@ -359,7 +438,8 @@
                                         <input type="tel" id="phone-input" placeholder="Phone number"
                                             class="phone-style input-text">
                                         <!-- Send Button: This is just for looks -->
-                                        <button class="input-text send-button paypal-button" id="get-app">Send Link</button>
+                                        <button class="input-text send-button paypal-button" id="get-app">Send
+                                            Link</button>
                                         <p class="small-bold-par">By clicking Send Link you agree to receive a text
                                             message with a link to the PayPal app. Message and data rates may apply.</p>
                                     </div>
@@ -368,7 +448,7 @@
                         </div>
                     </div>
                     <!-- 2nd Column -->
-                    <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12">
+                    <div class="col-xl-6 col-lg-12 col-md-12 col-xs-12">
                         <!-- BIG Hero Image -->
                         <img class="hero-img" src="assets/images/device-hero.png" alt="Woman touching giant phone">
                     </div>
@@ -379,10 +459,11 @@
         <section class="notification-ribbon background-color-white">
             <div class="container">
                 <p class="notification-ribbon-headline">
-                    Need to connect PayPal with your online store? 
+                    Need to connect PayPal with your online store?
                     <span class="notification-hatch">
                         <!-- Arrow and circle needs to be changed and add transitions so when on hover, ther arrow moves inside the circle -->
-                        <a href="#">Sign up for a Business account&nbsp; <img class="tertiary-button-icon" src="./assets/images/arrows/arrow1.png" alt="arrows"></a>
+                        <a href="#">Sign up for a Business account&nbsp; <img class="tertiary-button-icon"
+                                src="./assets/images/arrows/arrow1.png" alt="arrows"></a>
                     </span>
                 </p>
             </div>
@@ -404,7 +485,8 @@
                             4 at checkout with millions of online stores and split the cost into 4 interest-free
                             payments.</p>
                         <span class="editorial-paragraph bnpl-link">
-                            <a href="#">Learn how to Pay in 4 <span class="tertiary-button-icon"><img src="./assets/images/arrows/arrow1.png" alt="arrows"></span></a>
+                            <a href="#">Learn how to Pay in 4 <span class="tertiary-button-icon"><img
+                                        src="./assets/images/arrows/arrow1.png" alt="arrows"></span></a>
                         </span>
                     </div>
                 </div>
@@ -452,7 +534,8 @@
                         <p class="editorial-paragraph">Leave the cash and cards at home. When it comes to paying with
                             the app, the only thing you&#x2019;ll need to reach for is your phone.</p>
                         <span class="editorial-paragraph bnpl-link">
-                            <a href="#">Learn more about PayPal QR codes <span class="tertiary-button-icon"><img src="./assets/images/arrows/arrow1.png" alt="arrows"></a>
+                            <a href="#">Learn more about PayPal QR codes <span class="tertiary-button-icon"><img
+                                        src="./assets/images/arrows/arrow1.png" alt="arrows"></a>
                         </span>
                     </div>
                 </div>
@@ -467,7 +550,8 @@
                         <p class="editorial-paragraph">Explore creative ways to split the bill or send money with a
                             friendly message, colorful theme, GIFs, and more.<sup>1</sup></p>
                         <span class="editorial-paragraph bnpl-link">
-                            <a href="#">Send money now <span class="tertiary-button-icon"><img src="./assets/images/arrows/arrow1.png" alt="arrows"></a>
+                            <a href="#">Send money now <span class="tertiary-button-icon"><img
+                                        src="./assets/images/arrows/arrow1.png" alt="arrows"></a>
                         </span>
                     </div>
                     <div class="col-md-6 col-xs-12 text-xs-center" id="div8">
@@ -488,7 +572,8 @@
                         <p class="editorial-paragraph">Make a difference by supporting causes and fundraisers close to
                             home and heart.</p>
                         <span class="editorial-paragraph bnpl-link">
-                            <a href="#">Give through the app <span class="tertiary-button-icon"><img src="./assets/images/arrows/arrow1.png" alt="arrows"></a>
+                            <a href="#">Give through the app <span class="tertiary-button-icon"><img
+                                        src="./assets/images/arrows/arrow1.png" alt="arrows"></a>
                         </span>
                     </div>
                 </div>
@@ -541,7 +626,9 @@
             <div class="container">
                 <div class="row">
                     <div class="disclosure">
-                        <sup>1</sup>Paying friends back, or chipping in requires that you have an account with PayPal. A recipient will need to create an account with PayPal to receive money, if they don't already have one. An account with PayPal is required to send and receive money.
+                        <sup>1</sup>Paying friends back, or chipping in requires that you have an account with PayPal. A
+                        recipient will need to create an account with PayPal to receive money, if they don't already
+                        have one. An account with PayPal is required to send and receive money.
                     </div>
                 </div>
             </div>
@@ -550,12 +637,14 @@
     <!-- Main -->
 
 
-    
+
     <!-- Footer -->
 
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
     <!-- JS for Counter -->
     <script src="./assets/js/counter.js"></script>
