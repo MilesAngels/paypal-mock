@@ -1,4 +1,4 @@
-/* Resets */
+/**************** Resets ***************/
 *, .col-xl-6, .container, .row {
     margin: 0;
     padding: 0;
@@ -8,27 +8,30 @@ a {
     text-decoration: none;
 }
 
-/*  */
+/* Preset to make sure all fonts are the same */
 body {
     display: block;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
 }
-/* End of Resets */
+/*************** End of Resets ***************/
 
 
-/* Sections */
+/*************** Sections ***************/
+/* Main containers from hero section all the way to the counter section */
 section {
     display: flex;
     justify-content: center;
     padding: 80px 0px 0px 0px;
 }
 
+/* Bootstrap preset row */
 .row {
     margin-left: -12px;
     margin-right: -12px;
 }
 
+/* Bootstrap preset container */
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -37,18 +40,22 @@ section {
     width: 75%;
 }
 
+/* Forces text to be centered */
 .text-xs-center {
     text-align: center !important;
 }
 
+/* Forces text to be left aligned */
 .text-md-left {
     text-align: left !important;
 }
 
+/* Sets the background to be white */
 .theme-background-color-white {
     background-color: #fff;
 }
 
+/* Used in sections after the 'Sign Up for a Business account' ribbon */
 .editorial {
     font-size: 1.14285714rem;
     font-size: 16px;
@@ -58,6 +65,8 @@ section {
     padding-top: 60px;
 }
 
+/* Manipulates the maximum width of both the contents of editorial class and the images */
+/* within each section */
 .editorial , .editorial-img {
     max-width: 100%;
     max-height: none;
@@ -67,6 +76,7 @@ section {
     width: 100%;
 }
 
+/* Manipulates the headline within the sections after the ribbon */
 .editorial-headline {
     width: 524px;
     font-family: Arial, Helvetica, sans-serif;
@@ -75,6 +85,7 @@ section {
     margin-top: 80px;
 }
 
+/* Manipulates the subheading or paragraphs and link within the sections after the ribbon */
 .editorial-paragraph {
     width: 524px;
     padding-top: 20px;
@@ -84,6 +95,8 @@ section {
     line-height: 32px;
 }
 
+/* Manipulates the disclosure message found at the crypto section and */
+/* the message right under the counter */
 .disclosure {
     color: #4A4A4A;
     font-size: .875rem;
@@ -91,27 +104,16 @@ section {
 
 }
 
+/* Changes the color of the links that are found within the ribbon and sections after it */
 .bnpl-link a {
     color: #1072EB;
 }
 
-.showcase-header {
-    font-size: 2rem;
-    line-height: 40px;
-    text-align: left !important;
-    color: #0C0C0D;
-}
+/*************** End of Sections ***************/
 
-.showcase-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 0;
-}
-/* End of Sections */
 
-/* Hero Section */
+/*************** Hero Section ***************/
+/* Add background color for hearo section and background image for swirls */
 .hero-blue-background {
     background: #142c8e url('../images/background-swirls.png');
     background-size: 100%;
@@ -120,6 +122,7 @@ section {
     color: #fff;
 }
 
+/* Manipules the giant heading in the hero section */
 .hero-heading {
     font-size: 6.5rem;
     font-weight: 400;
@@ -128,6 +131,7 @@ section {
     padding-bottom: 30px;
 }
 
+/* Manipulates the paragraph just under the link 'Learn more about the new features' */
 .hero-par {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -136,6 +140,7 @@ section {
     font-weight: 600;
 }
 
+/* Manipulates the paragraph link under the giant heading in the hero section*/
 .hero-par-link {
     color: #56ccfe;
     font-family: Arial, Helvetica, sans-serif;
@@ -144,11 +149,13 @@ section {
     padding-top: 30px;
 }
 
+/* Hover effect for the paragraph link under the giant heading in the hero section */
 .hero-par-link:hover {
     color:rgba(255, 255, 255, 0.6);
     text-decoration: underline;
 }
 
+/* Manipulates the svg arrow that is attached to the paragraph link in the hero section */
 .hero-arrow {
     width: 40px;
     height: 28px;
@@ -159,47 +166,56 @@ section {
     transition: all .1s;
 }
 
+/* Adds the small transparent circle into the arrow */
 .hero-arrow-background:after {
     content: "";
     position: absolute;
     border-radius: 50%;
     background-color: #56CCFE;
     z-index: 1;
-    left: 725px;
+    left: 505px;
     width: 28px;
     height: 28px;
     opacity: .4;
 }
 
+/* Adds something similar to a hover effect to the arrow that is attached to the link */
 .hero-arrow:after {
     color: rgba(255, 255, 255, 0.6);
 }
 
+/* Targets the image  qr-code image to set its width and height */
 .col-md-3 img {
     width: 126px;
     height: 126px;
 }
 
+/* Sets the width of the column that houses the qr-code */
 .col-md-3 {
     width: 30%;
 }
 
+/* Sets the width of the column that houses the phone number input */
 .col-md-8 {
     width: 60%;
 }
 
+/* Adds padding to a Bootstrap preset column */
 .col-xl-6 {
     padding-left: 12px;
 }
 
+/* Add bottom margin to wherever this class is is placed */
 .bottom-margin {
     margin-bottom: 60px;
 }
 
+/* Adds a side border between the qr-code and phone input */
 .side-border {
     border-left: 1px solid rgba(235,232,232,0.3);
 }
 
+/* Adding the small phone icon within the phone input box */
 .phone-style {
     background: #fff url("../images/phone.png") no-repeat;
     background-position: 12px;
@@ -209,10 +225,12 @@ section {
     width: 300px;
 }
 
+/* Adding a padding to the phone input */
 .phone-padding {
     padding-left: 32px;
 }
 
+/* Manipulating how the text will look inside the phone input box */
 .input-text {
     font-size: 1rem;
     color: #2e2e2f;
@@ -221,6 +239,7 @@ section {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Manipulates how the send button will look */
 .send-button {
     background-color: #f9b822;
     margin: 12px 2px;
@@ -228,15 +247,18 @@ section {
     height: 56px;
 }
 
+/* Manipulates how the giant hero image will look */
 .hero-img {
     width: 100%;
     display:block;
     margin-right: auto;
     margin-left: auto;
 }
-/* End of Hero Section */
+/*************** End of Hero Section ***************/
 
-/* Ribbon */
+
+/*************** Ribbon ***************/
+/* Manipulates the main stucture of the ribbon */
 .notification-ribbon{
     background-color: #ffffff;
     color: #0c0c0d;
@@ -244,6 +266,7 @@ section {
     border: 1px solid #C4C4C4;
 }
 
+/* Manipulates the text within the ribbon */
 .notification-ribbon-headline {
     vertical-align: middle;
     font-size: 1.25rem;
@@ -252,13 +275,16 @@ section {
     text-align: center;
 }
 
+/* Adds a hover effect to the anchor tag within the span element */
 .notification-hatch a:hover {
     text-decoration: underline;
     text-decoration-color: #1072EB;
 }
-/* End of Ribbon */
+/*************** End of Ribbon ***************/
 
-/* Grid for Associated Brands */
+
+/*************** Grid for Associated Brands ***************/
+/* Creates the template for the grid */
 .grid {
     display: grid;
     width: 75%;
@@ -267,23 +293,28 @@ section {
     padding-bottom: 100px;
 }
 
+/* Manipulates the heading of the grid */
 .heading-showcase {
     padding-top: 40px;
     font-size: 3.3rem;
     line-height: 56px;
 }
 
+/* Manipulates all the images within the grid */
 .showcase-img {
     width: 90%;
 }
 
+/* Manipulates the heading-showcase so it can be wider than the rest of the grid boxes */
 .item1 {
     grid-row: 1 / 3;
     grid-column: 1/span 2;
 }
-/* End of Grid Associated Brands */
+/*************** End of Grid Associated Brands ***************/
 
-/* Buttons */
+
+/*************** Buttons ***************/
+/* Template button */
 .paypal-button {
     max-width: 440px;
     display: block;
@@ -296,15 +327,18 @@ section {
     border-radius: 25px;
     border: none;
 }
-/* End of Buttons */
+/*************** End of Buttons ***************/
 
-/* Counter Section */
+
+/*************** Counter Section ***************/
+/* Adds background color and extra spaces for the section above the counter */
 .custom-pullout {
     background-color: #121661;
     padding-top: 79px;
     padding-bottom: 79px;
 }
 
+/* Manipulates the text within the headline section above the counter */
 .pullout-headline {
     font-size: 44px;
     font-family: Arial, Helvetica, sans-serif;
@@ -312,12 +346,14 @@ section {
     margin-bottom: 30px;
 }
 
+/* Manipulates the button that is housed in the section above the counter */
 .pullout-btn {
     color: #0d3685;
     background-color: #fff;
     margin: 0 auto;
 }
 
+/* Manipulates the counter div */
 .counter{
     display: flex;
     padding: 20px 0 96px;
@@ -325,6 +361,7 @@ section {
     background-color: #121661;
 }
 
+/* Manipulates the divs with the numbers */
 .number {
     background-color: #1072EB;
     font-family: PayPalSansSmall-Regular,Helvetica Neue,Arial,sans-serif;
@@ -342,16 +379,18 @@ section {
     font-size: 3.5rem;
     line-height: 30px;
 }
-/* End of Counter Section */
+/*************** End of Counter Section ***************/
 
-/* Typography */
+
+/*************** Typography ***************/
+/* Change the small text right under the send button */
 .small-bold-par {
     font-weight: 600;
     font-size: 0.875rem;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 20px;
 }
-/* End of Typography */
+/*************** End of Typography ***************/
 
 /*
 .navbar-toggler-icon {
@@ -368,7 +407,7 @@ section {
 }
 */
 
-/* Media Queries */
+/*************** Media Queries ***************/
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 500px) {
@@ -466,6 +505,10 @@ section {
         padding-top: 0;
     }
 
+    .line-space {
+        line-height: 1.2rem;
+    }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -519,6 +562,10 @@ section {
     .container {
         margin: 0 36px;
         padding: 0;
+    }
+
+    .line-space {
+        line-height: 1.2rem;
     }
 }
 
@@ -586,6 +633,10 @@ section {
         height: 55px;
         border-radius: 15px;
     }
+
+    .line-space {
+        line-height: 1.2rem;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -617,6 +668,10 @@ section {
         padding-bottom: 10px;
     }
 
+    .line-space {
+        line-height: 1.2rem;
+    }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -646,6 +701,18 @@ section {
 
     .hero-img {
         width: 100%;
+    }
+
+    .col-md-3 {
+        width: 30%;
+    }
+
+    .col-md-8 {
+        width: 60%;
+    }
+    
+    .phone-padding {
+        padding-left: 32px;
     }
 
     .send-button {
@@ -692,8 +759,13 @@ section {
         border-radius: 20px;
     }
 
+    .line-space {
+        line-height: 1.2rem;
+    }
+
 }
 
+/* Extra large devices (1400px and over) */
 @media only screen and (min-width: 1400px) {
     .container {
         width: 80%;
@@ -719,4 +791,15 @@ section {
         flex-wrap: wrap;
         padding-bottom: 100px;
     }
+
+    .pullout-headline {
+        content: "\a";
+        white-space: pre-line;
+        line-height: 3rem;
+    }
+
+    .line-space {
+        line-height: 1.2rem;
+    }
 }
+/*************** End of Media Queries ***************/
