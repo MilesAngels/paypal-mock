@@ -8,6 +8,7 @@ a {
     text-decoration: none;
 }
 
+/*  */
 body {
     display: block;
     font-family: Arial, Helvetica, sans-serif;
@@ -366,3 +367,356 @@ section {
     transition: box-shadow .15s ease-in-out;
 }
 */
+
+/* Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 500px) {
+    section {
+        padding: 60px 0 0;
+    }
+
+    .hero-heading {
+        font-size: 3rem;
+        width: 370px;
+        line-height: 56px;
+        font-weight: 400;
+        padding-bottom: 0px;
+        margin: 0;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 24px;
+    }
+
+    .hero-par-link,
+    .hero-par,
+    .col-md-3,
+    .small-bold-par {
+        display: none;
+    }
+
+    .side-border {
+        border-left: none;
+    }
+
+    .phone-padding {
+        padding-left: 0;
+    }
+
+    input {
+        display: none;
+    }
+
+    .send-button {
+        width: 450px;
+        height: 46px;
+        font-size: 15px;
+    }
+
+    .editorial-headline {
+        width: 440px;
+        font-size: 40px;
+        color: #0C0C0D;
+        margin-top: 80px;
+    }
+
+    .notification-ribbon-headline {
+        text-align: left;
+    }
+
+    .editorial-paragraph {
+        font-size: 16px;
+        width: 420px;
+        padding-right: 12px;
+        font-weight: bolder;
+    }
+
+    .heading-showcase {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, minmax(225px, 1fr));
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+    }
+
+    .pullout-headline {
+        font-size: 2rem;
+        line-height: 40px;
+        color: #fff;
+        text-align: left !important;
+    }
+
+    .pullout-btn {
+        width: 320px;
+    }
+
+    .number {
+        width: 40px;
+        height: 38px;
+        border-radius: 10px;
+        font-size: 24px;
+    }
+
+    .counter {
+        padding-top: 0;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .section {
+        padding: 60px 36px 0 36px;
+    }
+
+    .hero-heading {
+        font-size: 3.25rem;
+        width: 500px;
+        line-height: 56px;
+        font-weight: 400;
+        padding-bottom: 0px;
+        margin: 0;
+    }
+
+    .send-button {
+        width: 320px;
+        height: 46px;
+        font-size: 15px;
+    }
+
+    .notification-ribbon-headline {
+        font-size: 1.25rem;
+        vertical-align: middle;
+        font-weight: 600;
+    }
+
+    .notification-hatch::before {
+        content: "\a";
+        white-space: pre;
+        line-height: 5rem;
+    }
+
+    .heading-showcase {
+        margin: 0 0 20px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+    }
+
+    .showcase-img {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .container {
+        margin: 0 36px;
+        padding: 0;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    section {
+        padding-top: 60px !important;
+    }
+
+    .editorial {
+        margin-top: 60px !important;
+    }
+
+    .hero-heading {
+        width: 670px;
+    }
+
+    .hero-img {
+        width: 80%;
+    }
+
+    .notification-ribbon-headline {
+        text-align: center;
+    }
+
+    .editorial-headline,
+    .editorial-paragraph {
+        width: 330px;
+        margin-top: 0px;
+    }
+
+    .editorial-paragraph {
+        font-weight: 500;
+        font-size: 1.25rem;
+    }
+
+    .disclosure {
+        line-height: 2.5rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(3, minmax(240px, 1fr));
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+    }
+
+    .heading-showcase {
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+        margin: 0 60px;
+    }
+
+    .item1 {
+        grid-row: 1 / 4;
+        grid-column: 1/span 3;
+    }
+
+    .pullout-headline {
+        font-size: 44px;
+        text-align: center !important;
+    }
+
+    .number {
+        width: 55px;
+        height: 55px;
+        border-radius: 15px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .editorial {
+        min-height: 530px;
+    }
+
+    .showcase-header {
+        width: 40%;
+        padding-bottom: 0;
+    }
+
+    .hero-heading {
+        font-size: 3.25rem;
+        font-weight: 400;
+        width: 822px;
+        line-height: 56px;
+        padding-bottom: 30px;
+    }
+
+    .hero-img {
+        width: 60%;
+    }
+
+    .grid {
+        grid-template-columns: repeat(3, minmax(280px, 1fr));
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    section {
+        padding: 80px 0 0 0;
+    }
+
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 24px;
+        padding-right: 24px;
+        width: 90%;
+    }
+
+    .hero-par-link,
+    .hero-par,
+    .col-md-3,
+    .small-bold-par, input {
+        display: block;
+    }
+
+    .side-border {
+        border-left: 1px solid rgba(235,232,232,0.3);
+    }
+
+    .hero-img {
+        width: 100%;
+    }
+
+    .send-button {
+        width: 138px;
+        height: 56px; 
+        padding: 0;
+    }
+
+    .notification-hatch:before {
+        content: none !important;
+        
+    }
+
+    .editorial-headline {
+        width: 468px;
+        font-size: 3rem;
+        line-height: 56px;
+    }
+
+    .grid {
+        display: grid;
+        /* width: 90%; */
+        grid-template-columns: repeat(5, minmax(200px, 1fr)) !important;
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+    }
+
+    .item1 {
+        grid-row: 1 / 3;
+        grid-column: 1/span 2;
+    }
+
+    .heading-showcase {
+        padding-top: 40px;
+        font-size: 3.3rem;
+        line-height: 56px;
+        margin: 0;
+    }
+
+    .number {
+        width: 60px;
+        height: 80px;
+        font-size: 3.5rem;
+        border-radius: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+    .container {
+        width: 80%;
+    }
+    
+    .hero-heading {
+        font-size: 6.5rem;
+        font-weight: 400;
+        width: 822px;
+        line-height: 6.25rem;
+        padding-bottom: 30px;
+    }
+
+    .editorial-headline {
+        width: 524px;
+        padding-top: 80px;
+    }
+
+    .grid {
+        display: grid;
+        /* width: 90%; */
+        grid-template-columns: repeat(5, minmax(230px, 1fr)) !important;
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+    }
+}
