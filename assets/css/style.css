@@ -111,6 +111,27 @@ section {
 
 /*************** End of Sections ***************/
 
+/*************** Buttons ***************/
+/* Template button */
+.paypal-button {
+    max-width: 440px;
+    /* display: block; */
+    padding: 13px 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 25px;
+    border: 1px solid #142c8e;
+}
+
+.button-color {
+    background-color: #003087;
+    color: #fff;
+}
+/*************** End of Buttons ***************/
 
 /*************** Hero Section ***************/
 /* Add background color for hearo section and background image for swirls */
@@ -243,6 +264,7 @@ section {
 .send-button {
     background-color: #f9b822;
     margin: 12px 2px;
+    font-weight: 600;
     width: 138px;
     height: 56px;
 }
@@ -312,22 +334,6 @@ section {
 }
 /*************** End of Grid Associated Brands ***************/
 
-
-/*************** Buttons ***************/
-/* Template button */
-.paypal-button {
-    max-width: 440px;
-    display: block;
-    padding: 13px 24px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 22px;
-    text-align: center;
-    border-radius: 25px;
-    border: none;
-}
-/*************** End of Buttons ***************/
 
 
 /*************** Counter Section ***************/
